@@ -32,7 +32,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- JS -->
-    <script defer="defer" src="./assets/js/script.js"></script>
+    <script type="module" defer="defer"  src="./assets/js/script.js"></script>
     <!-- Bootstrap JS -->
     <script
       defer
@@ -41,20 +41,21 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="light">
     <!-- Header -->
     <header>
       <nav class="navbar">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <i class="fa-solid fa-bars" type="button" onclick=openMenu()></i>
+            <i class="fa-solid fa-bars" id="fa-bars" type="button"></i>
             <img width="30" src="https://redux.js.org/img/redux.svg" alt="" />
             <h3>Redux</h3>
           </a>
+          <button class="lang" type="button" language="azerbaijan">EN</button>
           <ul id="menu-ul">
             <li class="nav-item">
               <a href="#" class="nav-link">Getting Started</a>
-              <button type="button" onclick=closeMenu()><i class="fa-solid fa-x"></i></button>
+              <button type="button"><i class="fa-solid fa-x"></i></button>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Tutorial</a></li>
             <li class="nav-item">
@@ -88,8 +89,8 @@
       <section id="redux">
         <div class="container">
           <h1>Redux</h1>
-          <p>A Predictable State Container for JS Apps</p>
-          <a href="#">Get Started</a>
+          <p class="redux-p">A Predictable State Container for JS Apps</p>
+          <a href="#" class="redux-a">Get Started</a>
         </div>
       </section>
       <!-- Section Cards -->
@@ -99,29 +100,29 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
               <div class="item">
                 <i class="fa-solid fa-check"></i>
-                <h2>Predictable</h2>
-                <p>Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.</p>
+                <h2 class="two-sec-h">Predictable</h2>
+                <p class="two-sec-p">Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.</p>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
               <div class="item">
                 <i class="fa-solid fa-boxes-stacked"></i>
-                <h2>Centralized</h2>
-                <p>Centralizing your application's state and logic enables powerful capabilities like undo/redo, state persistence, and much more.</p>
+                <h2 class="two-sec-h">Centralized</h2>
+                <p class="two-sec-p">Centralizing your application's state and logic enables powerful capabilities like undo/redo, state persistence, and much more.</p>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
               <div class="item">
                 <i class="fa-solid fa-bomb"></i>
-                <h2>Debuggable</h2>
-                <p>The Redux DevTools make it easy to trace when, where, why, and how your application's state changed. Redux's architecture lets you log changes, use "time-travel debugging", and even send complete error reports to a server.</p>
+                <h2 class="two-sec-h">Debuggable</h2>
+                <p class="two-sec-p">The Redux DevTools make it easy to trace when, where, why, and how your application's state changed. Redux's architecture lets you log changes, use "time-travel debugging", and even send complete error reports to a server.</p>
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
               <div class="item">
                 <i class="fa-solid fa-gears"></i>
-                <h2>Flexible</h2>
-                <p>Redux works with any UI layer, and has a large ecosystem of addons to fit your needs.</p>
+                <h2 class="two-sec-h">Flexible</h2>
+                <p class="two-sec-p">Redux works with any UI layer, and has a large ecosystem of addons to fit your needs.</p>
               </div>
             </div>
           </div>
@@ -132,15 +133,15 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-              <h2>Other Libraries from the Redux Team</h2>
+              <h2 class="lib">Other Libraries from the Redux Team</h2>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
               <a href="#">React-Redux <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <p>Official React bindings for Redux</p>
+              <p class="lib-p">Official React bindings for Redux</p>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
               <a href="#">Redux Toolkit <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <p>The official, opinionated, batteries-included toolset for efficient Redux development</p>
+              <p class="lib-p">The official, opinionated, batteries-included toolset for efficient Redux development</p>
             </div>
           </div>
         </div>
@@ -151,35 +152,35 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-            <h4>Docs</h4>
+            <h4 class="footer-title">Docs</h4>
             <ul>
-              <li>Getting Started</li>
-              <li>Usage Guide</li>
-              <li>Tutorial</li>
-              <li>FAQ</li>
-              <li>API Reference</li>
+              <li class="footer-link">Getting Started</li>
+              <li class="footer-link">Usage Guide</li>
+              <li class="footer-link">Tutorial</li>
+              <li class="footer-link">FAQ</li>
+              <li class="footer-link">API Reference</li>
             </ul>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-            <h4>Community</h4>
+            <h4 class="footer-title">Community</h4>
             <ul>
-              <li>Reactiflux Discord <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-              <li>Stack Overflow <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-              <li>Feedback <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+              <li class="footer-link">Reactiflux Discord <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+              <li class="footer-link">Stack Overflow <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+              <li class="footer-link">Feedback <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
             </ul>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-            <h4>More</h4>
+            <h4 class="footer-title">More</h4>
             <ul>
-              <li>GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
-              <li><img  src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt=""></li>
+              <li class="footer-link">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+              <li class="footer-link"><img  src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt=""></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="container-fluid">
         <img width="50" src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg" alt="">
-        <p>Copyright © 2015–2023 Dan Abramov and the Redux documentation authors.</p>
+        <p class="end-p">Copyright © 2015–2023 Dan Abramov and the Redux documentation authors.</p>
       </div>
     </footer>
   </body>
