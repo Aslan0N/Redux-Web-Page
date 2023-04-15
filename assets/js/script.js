@@ -52,6 +52,11 @@ const libP = document.querySelectorAll(".lib-p");
 const title = document.querySelectorAll(".footer-title");
 const links = document.querySelectorAll(".footer-link")
 const end = document.querySelector(".end-p")
+const p = document.querySelector(".redux-p")
+const a = document.querySelector(".redux-a")
+const h2Cards = document.querySelectorAll(".two-sec-h")
+const cardsP = document.querySelectorAll(".two-sec-p")
+// AZ Language
 const langAz = ()=>{
     langBtn.innerHTML = "AZ"
         localStorage.setItem("Language","Az")
@@ -80,6 +85,7 @@ const langAz = ()=>{
         }
         end.textContent = data.azerbaijan.main.copyRight
 }
+// EN Language
 const langEn = ()=>{
     langBtn.innerHTML = "EN"
     localStorage.setItem("Language","En")
@@ -106,26 +112,13 @@ const langEn = ()=>{
     }
     end.textContent = data.english.main.copyRight
 }
-const p = document.querySelector(".redux-p")
-const a = document.querySelector(".redux-a")
-const h2Cards = document.querySelectorAll(".two-sec-h")
-const cardsP = document.querySelectorAll(".two-sec-p")
 const langChange = ()=>{
-    if(langBtn.getAttribute == 'english'){
-        langBtn.setAttribute('language', 'azerbaijan')
-
-    }else{
-        langBtn.setAttribute('language', 'english')
-    }
     let localLang = localStorage.getItem("Language")
     if(localLang == "En"){
         langAz()
     }else{
         langEn()
-    }
-    const attr = langBtn.getAttribute('language')
-    
-   
+    }    
 }
 let localLang = localStorage.getItem("Language")
 if(localLang == "Az"){

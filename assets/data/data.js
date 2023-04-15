@@ -38,7 +38,7 @@ const data = {
             "libraries":['Redux üçün rəsmi reaksiya bağlamaları','Redux-un səmərəli inkişafı üçün rəsmi, rəyli, batareyalarla təchiz edilmiş alətlər dəsti'],
             "footerTitle": ['Sənədlər','Icma','Daha Çox'],
             "foterLink":['Başlayarkən','İstifadə Təlimatı','Dərslik','FAQ','API Arayışı','Reactiflux Discord','Stack Overflow','Rəy','GitHub'],
-            'copyRight':'Copyright © 2015–2023 Dan Abramov və Redux sənədlərininmüəllifləri.'
+            'copyRight':'Copyright © 2015–2023 Dan Abramov və Redux sənədlərinin müəllifləri.'
         }
     }
 }
